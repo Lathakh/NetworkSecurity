@@ -121,7 +121,7 @@
                             class:3. DataTransformationArtifact
                                     output of data transformation
 
-   3.components
+    3.components
         ----> CREATE --- data_transformation.py
                            Class: DataTransformation
                            functions: 0. __init__ constructor  - defined variable to validation out data and target to transformation  location config
@@ -130,11 +130,11 @@
                                      3.initiate_data_transformation 
                                      
 
-    5.utils
+    4.utils
         -----> CREATE ---common.py
                         function:1. save_object -- save as pickle file
                                  2. save_numpy_array_data()-- saving array train.arr an test.arr
-    6.main.py
+    5.main.py
                                  
 
     The OUTPUT OF DATA TRANSFORMATION COMPONENT TO GIVE train.npy AND test.npy AND  preprocessing.pkl IN ARTIFACT FOLDER
