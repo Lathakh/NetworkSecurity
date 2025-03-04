@@ -99,3 +99,50 @@
                                                         NOne 
                                                         none    
                                 
+### 8. Data Transformation component:
+    
+
+    1.constant
+        -----> UPDATE-- training_pipeline.py
+                        create --- __init__.py 
+                                    1.defining common constant variable for training pipeline
+                                    2.DATA Transformation related constant start with DATA TRANSFORMATION VAR NAME
+
+        
+    2.entity
+        ----->UPDATE --- Config_entity.py 
+                            Class : 1.TrainingPipelineConfig
+                            function:__init__ constructure
+
+                            Class : 2.DataTransformationConfig
+                            functions: 1. __init__ defined path of all output of data transformation           
+                        
+                        --artifact_config.py
+                            class:3. DataTransformationArtifact
+                                    output of data transformation
+
+   3.components
+        ----> CREATE --- data_transformation.py
+                           Class: DataTransformation
+                           functions: 0. __init__ constructor  - defined variable to validation out data and target to transformation  location config
+                                     1. read_data  - read from data validated folder train and test.csv   @ static method
+                                     2. get_data_transformation_object-- this KNNImputer 
+                                     3.initiate_data_transformation 
+                                     
+
+    5.utils
+        -----> CREATE ---common.py
+                        function:1. save_object -- save as pickle file
+                                 2. save_numpy_array_data()-- saving array train.arr an test.arr
+    6.main.py
+                                 
+
+    The OUTPUT OF DATA TRANSFORMATION COMPONENT TO GIVE train.npy AND test.npy AND  preprocessing.pkl IN ARTIFACT FOLDER
+
+                                --CREATED--- data_transformation folder
+                                                --1.data_transformed folder
+                                                        test.npy
+                                                        train.npy
+                                                --2. transformed_object folder
+                                                        preprocessing.pkl
+                                             
