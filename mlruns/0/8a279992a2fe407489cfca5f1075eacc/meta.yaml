@@ -1,0 +1,15 @@
+artifact_uri: file:///G:/ML_Projects/NetworkSecurity/mlruns/0/8a279992a2fe407489cfca5f1075eacc/artifacts
+end_time: 1741244589783
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8a279992a2fe407489cfca5f1075eacc
+run_name: tasteful-bear-258
+run_uuid: 8a279992a2fe407489cfca5f1075eacc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741244572964
+status: 3
+tags: []
+user_id: HP
