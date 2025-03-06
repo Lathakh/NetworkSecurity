@@ -114,6 +114,8 @@ class ModelTrainer:
             network_model=NetworkModel(preprocessor=preprocessor,model=best_model)
             save_object(self.model_trainer_conf.trained_model_file_path,obj=network_model)
 
+            # model pusher to any cloud here i am pusing to local folder 
+            save_object("final_model/model.pkl",best_model)    
 
             #model trainer artifact
 

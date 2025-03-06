@@ -88,6 +88,9 @@ class DataTransformation:
 
             save_object(self.data_transformation_config.transformed_object_file_path,preprocessor_object,)
 
+            #preprcessor object pusher to any cloud here i am pusing to local folder 
+            save_object("final_model/preprocessor.pkl",preprocessor_object)
+
             #preprating artifact
 
             data_transformation_artifact=DataTransformationArtifact(
